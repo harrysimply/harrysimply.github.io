@@ -104,4 +104,4 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/harrysimply/harrysimply.github.io.git
-  branch: develop
+  branch: master
