@@ -1,5 +1,8 @@
-# 【转】curl的常用用法
-
+---
+title: 【转】curl的常用用法
+date: 2021-10-05 21:28:35
+tags: 技术
+---
 
 
 > 因为在机房中往往使用命令行，在测试api或者测试elasticsearch数据库时往往需要大量使用curl命令，在网上找到了阮一峰老师的这篇笔记，里面基本涵盖了日常使用的大部分curl的参数。
@@ -84,7 +87,7 @@ $ curl -i https://www.example.com
 上面命令收到服务器回应后，先输出服务器回应的标头，然后空一行，再输出网页的源码。
 
 ## -I
--I参数向服务器发出 HEAD 请求，然会将服务器返回的 HTTP 标头打印出来。
+`-I`参数向服务器发出 HEAD 请求，然会将服务器返回的 HTTP 标头打印出来。
 
 ```shell
 $ curl -I https://www.example.com
@@ -92,7 +95,7 @@ $ curl -I https://www.example.com
 
 上面命令输出服务器对 HEAD 请求的回应。
 
---head参数等同于-I。
+`--head`参数等同于`-I`。
 
 ```shell
 $ curl --head https://www.example.com
@@ -107,7 +110,7 @@ $ curl -k https://www.example.com
 上面命令不会检查服务器的 SSL 证书是否正确。
 
 ## -L
--L参数会让 HTTP 请求跟随服务器的重定向。curl 默认不跟随重定向。
+`-L`参数会让 HTTP 请求跟随服务器的重定向。curl 默认不跟随重定向。
 
 ```shell
 $ curl -L -d 'tweet=hi' https://api.twitter.com/tweet
@@ -122,7 +125,7 @@ $ curl --limit-rate 200k https://google.com
 上面命令将带宽限制在每秒 200K 字节。
 
 ## -o
--o参数将服务器的回应保存成文件，等同于wget命令。
+`-o`参数将服务器的回应保存成文件，等同于wget命令。
 
 ```shell
 $ curl -o example.html https://www.example.com
@@ -131,7 +134,7 @@ $ curl -o example.html https://www.example.com
 
 
 ## -O
--O参数将服务器回应保存成文件，并将 URL 的最后部分当作文件名。
+`-O`参数将服务器回应保存成文件，并将 URL 的最后部分当作文件名。
 
 ```shell
 $ curl -O https://www.example.com/foo/bar.html
@@ -140,7 +143,7 @@ $ curl -O https://www.example.com/foo/bar.html
 
 
 ## -u
--u参数用来设置服务器认证的用户名和密码。
+`-u`参数用来设置服务器认证的用户名和密码。
 
 ```shell
 $ curl -u 'bob:12345' https://google.com/login
