@@ -4,7 +4,7 @@
 
 # Site
 title: 渴望就是力量
-subtitle: ''
+subtitle: Nice to meet you!
 description: 'Code, Vlog, Cook, Bayern Munich'
 keywords:
 author: 黄叫兽
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: material 
+theme: matery 
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
