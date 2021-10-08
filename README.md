@@ -24,3 +24,6 @@ hexo server
 
 https://zhuanlan.zhihu.com/p/350654582
 
+# 增加评论留言板功能。
+
+https://zhuanlan.zhihu.com/p/257707609 
